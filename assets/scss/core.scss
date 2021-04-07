@@ -1,0 +1,100 @@
+#header{
+	width: 100%;
+	height: 140px;
+	background: #fff;
+	border-bottom: 1px solid #e4e4e4;
+
+
+	.system-block {
+		height: 85px;
+
+		.logo {
+			float: left;
+
+			.title {
+				width: 155px;
+				height: 34px;
+				background: url(../images/sp_common.png) no-repeat 0 0;
+				text-indent: -99999px;
+			}
+		}
+
+		.location {
+			float: left;
+			margin: 0 auto;
+			width: 345px;
+			border-bottom: 1px solid #222;
+		}
+
+		.util {
+			float: right;
+
+			li {
+				float: left;
+				list-style: none;
+				line-height: 1.5;
+				vertical-align: middle;
+
+				a {
+					color: #222;
+					text-decoration: none;
+				}
+
+				select {
+					padding: 5px 10px;
+					border-radius: 30px;
+				}
+			}
+		}
+	}
+
+	.gnb-block {
+		.gnb {
+			float: left;
+
+			li {
+				float: left;
+				list-style: none;
+
+				a {
+					color: #222;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.view-more {
+			float: right;
+		}
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+
+	&-max {}
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.sec-slider {
+	position: relative;
+}
+
+.swiper-container {
+	.swiper-wrapper {}
+
+	.swiper-slide {}
+}
+
+.navigation {}

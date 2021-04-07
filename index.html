@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1440, initial-scale=1.0">
+	<title>도미노피자 클론코딩</title>
+	<link rel="stylesheet" href="./assets/css/core.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div class="container">
+				<div class="system-block clearfix">
+					<div class="logo">
+						<h1 class="title">도미노피자</h1>
+					</div>
+					<div class="location">
+						<i class="icon"></i>
+						논현로 123길 35-1
+					</div>
+					<div class="util">
+						<ul class="clearfix">
+							<li><a href="#">로그인</a></li>
+							<li><a href="#">회원가입</a></li>
+							<li>
+								<select name="" id="">
+									<option value="kor">KOR</option>
+									<option value="eng">ENG</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="gnb-block clearfix">
+					<nav class="gnb clearfix">
+						<ul>
+							<li><a href="#">메뉴</a></li>
+							<li><a href="#">e-쿠폰</a></li>
+							<li><a href="#">상품권 선물</a></li>
+							<li><a href="#">이벤트 &middot; 제휴</a></li>
+							<li><a href="#">매장검색</a></li>
+						</ul>
+					</nav>
+
+					<div class="view-more">
+						<a href="#">더보기 <i class="icon"></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="allmenu">
+			전체메뉴
+		</div>
+
+		<main id="main">
+			<section class="sec-slider">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./assets/images/slider01.jpg" alt="슬라이더 01"></div>
+						<div class="swiper-slide"><img src="./assets/images/slider02.jpg" alt="슬라이더 02"></div>
+						<div class="swiper-slide"><img src="./assets/images/slider02.jpg" alt="슬라이더 02"></div>
+						<div class="swiper-slide"><img src="./assets/images/slider01.jpg" alt="슬라이더 01"></div>
+					</div>
+				</div>
+
+				<div class="navigation">
+					<button class="arrows prev" aria-label="이전 슬라이더">prev</button>
+					<button class="arrows next" aria-label="다음 슬라이더">next</button>
+				</div>
+			</section>
+
+			<script>
+				var secSlider = new Swiper('.swiper-container', {
+					loop: true,
+					slidesPerView: 1,
+					navigation: {
+						nextEl: '.sec-slider .next',
+						prevEl: '.sec-slider .prev',
+					},
+					on: {
+						init: function() {
+							console.log(this);
+							// console.log($( this.slides[this.activeIndex] ));
+						},
+						slideChange: function() {
+							console.log(2);
+						}
+					}
+				});
+			</script>
+		</main>
+
+		<footer id="footer"></footer>
+	</div>
+</body>
+</html>
